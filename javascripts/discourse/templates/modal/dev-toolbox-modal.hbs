@@ -2,7 +2,7 @@
   @title={{theme-prefix "dev_utils.modal.title"}}
   @class="insert-table-modal"
 >
-  <h3>{{d-icon "running"}} Quick Actions</h3>
+  <h3>{{d-icon "running"}} {{theme-i18n "dev_utils.actions.title"}}</h3>
   <div class="modal-button-group">
     <DButton
       @title={{theme-prefix "dev_utils.actions.toggle_alerts"}}
@@ -18,7 +18,7 @@
     />
   </div>
 
-  <h3>{{d-icon "link"}} Quick Links</h3>
+  <h3>{{d-icon "link"}} {{theme-i18n "dev_utils.links.title"}}</h3>
   <div class="modal-button-group">
     <DButton
       @title={{theme-prefix "dev_utils.links.themes"}}
@@ -76,7 +76,7 @@
     </a>
   </div>
 
-  <h3>{{d-icon "tools"}} Common Settings</h3>
+  <h3>{{d-icon "tools"}} {{theme-i18n "dev_utils.common_settings.title"}}</h3>
   <div class="modal-button-group">
     <ComboBox
       @content={{this.commonSettings}}

@@ -50,7 +50,6 @@ export default class extends Controller {
       document.body.classList.add("alerts-hidden");
       localStorage.setItem("alerts-visibility", "alerts-hidden");
     }
-
     this._triggerModalClose();
   }
 

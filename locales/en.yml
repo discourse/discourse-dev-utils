@@ -7,9 +7,11 @@ en:
       title: "Developer Toolbox"
       cancel: "Cancel"
     actions:
+      title: "Quick Actions"
       toggle_alerts: "Toggle Alerts"
       toggle_plugin_outlets: "Toggle Outlets"
     links:
+      title: "Quick Links"
       themes: "Themes"
       colors: "Colors"
       settings: "Settings"
@@ -19,4 +21,5 @@ en:
       plugin_api: "Plugin API"
       docs: "Discourse Docs"
     common_settings:
+      title: "Common Settings"
       none: "Select a setting"
