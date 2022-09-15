@@ -1,0 +1,22 @@
+{
+  "about_url": null,
+  "license_url": null,
+  "assets": {},
+  "name": "Dev Utils",
+  "author": "Keegan George",
+  "component": true,
+  "components": [
+    "https://github.dev/communiteq/plugin-outlets-theme-component.git"
+  ],
+  "modifiers": {
+    "svg_icons": [
+      "palette",
+      "running",
+      "plug",
+      "exclamation",
+      "tools",
+      "font",
+      "book-open"
+    ]
+  }
+}

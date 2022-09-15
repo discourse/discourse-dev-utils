@@ -1,0 +1,22 @@
+en:
+  theme_metadata:
+    description: "A toolbox for developers to quickly toggle common actions while developing"
+  dev_utils:
+    toggle_btn: "Dev Toolbox"
+    modal:
+      title: "Developer Toolbox"
+      cancel: "Cancel"
+    actions:
+      toggle_alerts: "Toggle Alerts"
+      toggle_plugin_outlets: "Toggle Outlets"
+    links:
+      themes: "Themes"
+      colors: "Colors"
+      settings: "Settings"
+      plugins: "Plugins"
+      user_prefs: "User Preferences"
+      text: "Text"
+      plugin_api: "Plugin API"
+      docs: "Discourse Docs"
+    common_settings:
+      none: "Select a setting"

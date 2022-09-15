@@ -1,0 +1,15 @@
+show_header_button:
+  type: bool
+  default: false
+  description:
+    en: "Show the trigger for the dev toolbox in the header panel"
+remove_button_from_flow:
+  type: bool
+  default: false
+  description:
+    en: "Fixes the header button to bottom right. (Requires show_header_button to be enabled)"
+actions_close_modal:
+  type: bool
+  default: true
+  description:
+    en: "Triggering an action in the toolbox will also close the toolbox modal."
