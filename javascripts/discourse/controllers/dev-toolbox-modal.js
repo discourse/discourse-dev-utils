@@ -9,6 +9,8 @@ export default class extends Controller {
     { id: "tagStyle", name: "tag_style" },
     { id: "topMenu", name: "top_menu" },
     { id: "desktopCategoryPageStyle", name: "desktop_category_page_style" },
+    { id: "enableSidebar", name: "enable_sidebar" },
+    { id: "enableSidebarHamburger", name: "enable_sidebar_hamburger" },
   ];
 
   @action
@@ -67,28 +69,29 @@ export default class extends Controller {
 
   @action
   navigateToSetting(setting) {
+    const base = "/admin/site_settings/category";
     switch (setting) {
       case "tagStyle":
-        DiscourseURL.routeTo(
-          "/admin/site_settings/category/all_results?filter=tag_style"
-        );
+        DiscourseURL.routeTo(`${base}/all_results?filter=tag_style`);
         break;
       case "topMenu":
-        DiscourseURL.routeTo(
-          "/admin/site_settings/category/all_results?filter=top_menu"
-        );
+        DiscourseURL.routeTo(`${base}/all_results?filter=top_menu`);
         break;
       case "branding":
-        DiscourseURL.routeTo("/admin/site_settings/category/branding");
+        DiscourseURL.routeTo(`${base}/branding`);
         break;
       case "categoryStyle":
-        DiscourseURL.routeTo(
-          "/admin/site_settings/category/basic?filter=category_style"
-        );
+        DiscourseURL.routeTo(`${base}/basic?filter=category_style`);
         break;
       case "desktopCategoryPageStyle":
         DiscourseURL.routeTo(
-          "/admin/site_settings/category/basic?filter=desktop_category_page_style"
+          `${base}/basic?filter=desktop_category_page_style`
+        );
+      case "enableSidebar":
+        DiscourseURL.routeTo(`${base}/all_results?filter=enable_sidebar`);
+      case "enableSidebarHamburger":
+        DiscourseURL.routeTo(
+          `${base}/all_results?filter=enable%20experimental%20sidebar%20hamburger`
         );
       default:
         break;
