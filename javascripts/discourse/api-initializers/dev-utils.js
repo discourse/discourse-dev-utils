@@ -2,6 +2,12 @@ import { apiInitializer } from "discourse/lib/api";
 import showModal from "discourse/lib/show-modal";
 
 export default apiInitializer("0.11.1", (api) => {
+  const currentUser = api.getCurrentUser();
+
+  if (!currentUser?.admin) {
+    return;
+  }
+
   if (settings.show_header_button) {
     api.decorateWidget("header-icons:before", (helper) => {
       return helper.attach("header-dropdown", {
