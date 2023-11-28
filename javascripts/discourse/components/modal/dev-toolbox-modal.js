@@ -1,8 +1,10 @@
-import Controller from "@ember/controller";
 import { action } from "@ember/object";
+import Component from "@glimmer/component";
+import { tracked } from "@glimmer/tracking";
 import DiscourseURL from "discourse/lib/url";
 
-export default class extends Controller {
+export default class DevToolboxModal extends Component {
+  @tracked commonSetting;
   commonSettings = [
     { id: "branding", name: "branding" },
     { id: "categoryStyle", name: "category_style" },
@@ -85,7 +87,7 @@ export default class extends Controller {
         break;
       case "desktopCategoryPageStyle":
         DiscourseURL.routeTo(
-          `${base}/basic?filter=desktop_category_page_style`
+          `${base}/basic?filter=desktop_category_page_style`,
         );
         break;
       case "enableSidebar":
@@ -93,7 +95,7 @@ export default class extends Controller {
         break;
       case "enableSidebarHamburger":
         DiscourseURL.routeTo(
-          `${base}/all_results?filter=enable%20experimental%20sidebar%20hamburger`
+          `${base}/all_results?filter=enable%20experimental%20sidebar%20hamburger`,
         );
         break;
     }
@@ -103,7 +105,7 @@ export default class extends Controller {
 
   _triggerModalClose() {
     if (settings.actions_close_modal) {
-      return this.send("closeModal");
+      this.args.closeModal();
     }
   }
 }
