@@ -87,7 +87,7 @@ export default class DevToolboxModal extends Component {
         break;
       case "desktopCategoryPageStyle":
         DiscourseURL.routeTo(
-          `${base}/basic?filter=desktop_category_page_style`,
+          `${base}/basic?filter=desktop_category_page_style`
         );
         break;
       case "enableSidebar":
@@ -95,7 +95,7 @@ export default class DevToolboxModal extends Component {
         break;
       case "enableSidebarHamburger":
         DiscourseURL.routeTo(
-          `${base}/all_results?filter=enable%20experimental%20sidebar%20hamburger`,
+          `${base}/all_results?filter=enable%20experimental%20sidebar%20hamburger`
         );
         break;
     }

@@ -1,7 +1,7 @@
 .d-modal.user-notes-modal {
   .d-modal__container {
     width: 100%;
-    .d-modal__body.modal-button-group {
+    .modal-button-group {
       padding-bottom: 1rem;
       display: flex;
       flex-flow: row wrap;
@@ -10,7 +10,6 @@
     }
   }
 }
-
 
 .alerts-hidden {
   .alert {
