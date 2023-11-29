@@ -87,13 +87,14 @@ export default class extends Controller {
         DiscourseURL.routeTo(
           `${base}/basic?filter=desktop_category_page_style`
         );
+        break;
       case "enableSidebar":
         DiscourseURL.routeTo(`${base}/all_results?filter=enable_sidebar`);
+        break;
       case "enableSidebarHamburger":
         DiscourseURL.routeTo(
           `${base}/all_results?filter=enable%20experimental%20sidebar%20hamburger`
         );
-      default:
         break;
     }
 
