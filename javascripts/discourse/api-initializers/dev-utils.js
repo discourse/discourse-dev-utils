@@ -1,5 +1,5 @@
 import { apiInitializer } from "discourse/lib/api";
-import showModal from "discourse/lib/show-modal";
+import DevToolboxModal from "../components/modal/dev-toolbox-modal";
 
 export default apiInitializer("0.11.1", (api) => {
   const currentUser = api.getCurrentUser();
@@ -18,7 +18,7 @@ export default apiInitializer("0.11.1", (api) => {
     });
 
     api.attachWidgetAction("header", "toggleDevToolbox", function () {
-      showModal("dev-toolbox-modal");
+      api.container.lookup("service:modal").show(DevToolboxModal);
     });
   }
   const isInputSelection = (el) => {
@@ -35,7 +35,7 @@ export default apiInitializer("0.11.1", (api) => {
     if (!isInputSelection(event.target)) {
       return;
     }
-    showModal("dev-toolbox-modal");
+    api.container.lookup("service:modal").show(DevToolboxModal);
     event.preventDefault();
     event.stopPropagation();
   };

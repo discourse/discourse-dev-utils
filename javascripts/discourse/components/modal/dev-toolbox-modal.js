@@ -1,8 +1,10 @@
-import Controller from "@ember/controller";
+import Component from "@glimmer/component";
+import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
 import DiscourseURL from "discourse/lib/url";
 
-export default class extends Controller {
+export default class DevToolboxModal extends Component {
+  @tracked commonSetting;
   commonSettings = [
     { id: "branding", name: "branding" },
     { id: "categoryStyle", name: "category_style" },
@@ -103,7 +105,7 @@ export default class extends Controller {
 
   _triggerModalClose() {
     if (settings.actions_close_modal) {
-      return this.send("closeModal");
+      this.args.closeModal();
     }
   }
 }
