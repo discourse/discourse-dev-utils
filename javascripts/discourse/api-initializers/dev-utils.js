@@ -1,7 +1,8 @@
 import { apiInitializer } from "discourse/lib/api";
+import DevToolboxHeaderIcon from "../components/dev-toolbox-header-icon";
 import DevToolboxModal from "../components/modal/dev-toolbox-modal";
 
-export default apiInitializer("0.11.1", (api) => {
+export default apiInitializer("1.28.0", (api) => {
   const currentUser = api.getCurrentUser();
 
   if (!currentUser?.admin) {
@@ -9,32 +10,18 @@ export default apiInitializer("0.11.1", (api) => {
   }
 
   if (settings.show_header_button) {
-    api.decorateWidget("header-icons:before", (helper) => {
-      return helper.attach("header-dropdown", {
-        title: themePrefix("dev_utils.toggle_btn"),
-        icon: "cog",
-        action: "toggleDevToolbox",
-      });
-    });
-
-    api.attachWidgetAction("header", "toggleDevToolbox", function () {
-      api.container.lookup("service:modal").show(DevToolboxModal);
+    api.headerIcons.add("dev-toolbox", DevToolboxHeaderIcon, {
+      before: "chat",
     });
   }
-  const isInputSelection = (el) => {
-    const inputs = ["input", "textarea", "select", "button"];
-    const elementTagName = el?.tagName.toLowerCase();
-
-    if (inputs.includes(elementTagName)) {
-      return false;
-    }
-    return true;
-  };
 
   const showDevToolbox = (event) => {
-    if (!isInputSelection(event.target)) {
+    const elementTagName = event.target?.tagName.toLowerCase();
+
+    if (["input", "textarea", "select", "button"].includes(elementTagName)) {
       return;
     }
+
     api.container.lookup("service:modal").show(DevToolboxModal);
     event.preventDefault();
     event.stopPropagation();
