@@ -22,7 +22,7 @@ export default class DevToolboxHeaderIcon extends Component {
       @action={{this.showModal}}
       @icon="cog"
       @translatedTitle={{this.title}}
-      class="btn-flat icon"
+      class="btn-flat icon dev-toolbox-trigger"
     />
   </template>
 }

@@ -1,4 +1,4 @@
-.d-modal.user-notes-modal {
+.d-modal.dev-toolbox-modal {
   .d-modal__container {
     width: 100%;
     .modal-button-group {
@@ -25,12 +25,12 @@
   padding: 0.25em;
 }
 
-#toggle-plugin-outlets {
+.d-header .plugin-outlets-header-icon {
   display: none;
 }
 
 @if ($remove_button_from_flow == "true") {
-  .header-dropdown-toggle [title="Dev Toolbox"] {
+  .btn.dev-toolbox-trigger {
     position: fixed;
     bottom: 1rem;
     right: 1em;
