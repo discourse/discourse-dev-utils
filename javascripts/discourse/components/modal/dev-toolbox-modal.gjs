@@ -1,13 +1,12 @@
 import Component from "@glimmer/component";
 import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
-import DiscourseURL from "discourse/lib/url";
-import ComboBox from "select-kit/components/combo-box";
-import DModal from "discourse/components/d-modal";
-import dIcon from "discourse-common/helpers/d-icon";
 import DButton from "discourse/components/d-button";
+import DModal from "discourse/components/d-modal";
+import DiscourseURL from "discourse/lib/url";
+import dIcon from "discourse-common/helpers/d-icon";
 import i18n from "discourse-common/helpers/i18n";
-
+import ComboBox from "select-kit/components/combo-box";
 
 export default class DevToolboxModal extends Component {
   @tracked commonSetting;
@@ -120,7 +119,8 @@ export default class DevToolboxModal extends Component {
       @title={{i18n (themePrefix "dev_utils.modal.title")}}
       class="dev-toolbox-modal"
     >
-      <h3>{{dIcon "running"}} {{i18n (themePrefix "dev_utils.actions.title")}}</h3>
+      <h3>{{dIcon "running"}}
+        {{i18n (themePrefix "dev_utils.actions.title")}}</h3>
       <div class="modal-button-group">
         <DButton
           @title={{themePrefix "dev_utils.actions.toggle_alerts"}}
@@ -196,18 +196,17 @@ export default class DevToolboxModal extends Component {
           class="btn btn-icon-text"
         >
           {{dIcon "book-open"}}
-           {{i18n (themePrefix "dev_utils.links.docs")}}
+          {{i18n (themePrefix "dev_utils.links.docs")}}
         </a>
         {{#each settings.custom_links as |link|}}
-        <a
-          href={{link.link}}
-          class="btn btn-icon-text"
-        >{{dIcon link.icon}} {{link.name}}</a>
+          <a href={{link.link}} class="btn btn-icon-text">{{dIcon link.icon}}
+            {{link.name}}</a>
         {{/each}}
 
       </div>
 
-      <h3>{{dIcon "tools"}} {{i18n (themePrefix "dev_utils.common_settings.title")}}</h3>
+      <h3>{{dIcon "tools"}}
+        {{i18n (themePrefix "dev_utils.common_settings.title")}}</h3>
       <div class="modal-button-group">
         <ComboBox
           @content={{this.commonSettings}}

@@ -29,13 +29,6 @@ export default apiInitializer("1.28.0", (api) => {
 
   api.addKeyboardShortcut("`", (event) => showDevToolbox(event), {
     global: true,
-    help: {
-      category: "application",
-      name: "Open Dev Toolbox",
-      definition: {
-        keys1: ["`"],
-      },
-    },
   });
 
   api.onPageChange(() => {
