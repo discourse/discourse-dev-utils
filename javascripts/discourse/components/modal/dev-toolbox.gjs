@@ -8,102 +8,59 @@ import dIcon from "discourse-common/helpers/d-icon";
 import i18n from "discourse-common/helpers/i18n";
 import ComboBox from "select-kit/components/combo-box";
 
+const COMMON_SETTINGS = [
+  { id: "branding", name: "branding", path: "branding" },
+  {
+    id: "categoryStyle",
+    name: "category_style",
+    path: "basic?filter=category_style",
+  },
+  { id: "tagStyle", name: "tag_style", path: "all_results?filter=tag_style" },
+  { id: "topMenu", name: "top_menu", path: "all_results?filter=top_menu" },
+  {
+    id: "desktopCategoryPageStyle",
+    name: "desktop_category_page_style",
+    path: "basic?filter=desktop_category_page_style",
+  },
+  {
+    id: "navigationMenu",
+    name: "navigation_menu",
+    path: "all_results?filter=navigation_menu",
+  },
+];
+
 export default class DevToolboxModal extends Component {
   @tracked commonSetting;
-  commonSettings = [
-    { id: "branding", name: "branding" },
-    { id: "categoryStyle", name: "category_style" },
-    { id: "tagStyle", name: "tag_style" },
-    { id: "topMenu", name: "top_menu" },
-    { id: "desktopCategoryPageStyle", name: "desktop_category_page_style" },
-    { id: "navigationMenu", name: "navigation_menu" },
-  ];
-
-  @action
-  visitThemes() {
-    DiscourseURL.routeTo("/admin/customize/themes");
-  }
-
-  @action
-  visitComponents() {
-    DiscourseURL.routeTo("/admin/customize/components");
-  }
-
-  @action
-  visitColors() {
-    DiscourseURL.routeTo("/admin/customize/colors");
-  }
-
-  @action
-  visitSettings() {
-    DiscourseURL.routeTo("/admin/site_settings/");
-  }
-
-  @action
-  visitPlugins() {
-    DiscourseURL.routeTo("/admin/plugins/");
-  }
-
-  @action
-  visitUserPrefs() {
-    DiscourseURL.routeTo("/my/preferences/account");
-  }
-
-  @action
-  visitTextCustomize() {
-    DiscourseURL.routeTo("/admin/customize/site_texts?q=");
-  }
 
   @action
   toggleAlerts() {
-    if (document.body.classList.contains("alerts-hidden")) {
-      document.body.classList.remove("alerts-hidden");
-      localStorage.setItem("alerts-visibility", "alerts-visible");
-    } else {
-      document.body.classList.add("alerts-hidden");
-      localStorage.setItem("alerts-visibility", "alerts-hidden");
-    }
+    const hidden = document.body.classList.contains("alerts-hidden");
+
+    localStorage.setItem(
+      "alerts-visibility",
+      hidden ? "alerts-visible" : "alerts-hidden"
+    );
+    document.body.classList.toggle("alerts-hidden");
     this._triggerModalClose();
   }
 
   @action
   togglePluginOutlets() {
-    if (document.body.classList.contains("plugin-outlets-visible")) {
-      document.body.classList.remove("plugin-outlets-visible");
-      localStorage.setItem("plugin-outlet-visibility", "outlets-invisible");
-    } else {
-      document.body.classList.add("plugin-outlets-visible");
-      localStorage.setItem("plugin-outlet-visibility", "outlets-visible");
-    }
+    const visible = document.body.classList.contains("plugin-outlets-visible");
+
+    localStorage.setItem(
+      "plugin-outlet-visibility",
+      visible ? "outlets-invisible" : "outlets-visible"
+    );
+    document.body.classList.toggle("plugin-outlets-visible");
     this._triggerModalClose();
   }
 
   @action
   navigateToSetting(setting) {
     const base = "/admin/site_settings/category";
-    switch (setting) {
-      case "tagStyle":
-        DiscourseURL.routeTo(`${base}/all_results?filter=tag_style`);
-        break;
-      case "topMenu":
-        DiscourseURL.routeTo(`${base}/all_results?filter=top_menu`);
-        break;
-      case "branding":
-        DiscourseURL.routeTo(`${base}/branding`);
-        break;
-      case "categoryStyle":
-        DiscourseURL.routeTo(`${base}/basic?filter=category_style`);
-        break;
-      case "desktopCategoryPageStyle":
-        DiscourseURL.routeTo(
-          `${base}/basic?filter=desktop_category_page_style`
-        );
-        break;
-      case "navigationMenu":
-        DiscourseURL.routeTo(`${base}/all_results?filter=navigation_menu`);
-        break;
-    }
-
+    const { path } = COMMON_SETTINGS.find((s) => s.id === setting);
+    DiscourseURL.routeTo(`${base}/${path}`);
     this.commonSetting = setting;
   }
 
@@ -142,65 +99,67 @@ export default class DevToolboxModal extends Component {
           @title={{themePrefix "dev_utils.links.themes"}}
           @icon="paint-brush"
           @label={{themePrefix "dev_utils.links.themes"}}
-          @action={{this.visitThemes}}
+          @href="/admin/customize/themes"
         />
         <DButton
           @title={{themePrefix "dev_utils.links.components"}}
           @icon="puzzle-piece"
           @label={{themePrefix "dev_utils.links.components"}}
-          @action={{this.visitComponents}}
+          @href="/admin/customize/components"
         />
         <DButton
           @title={{themePrefix "dev_utils.links.colors"}}
           @icon="palette"
           @label={{themePrefix "dev_utils.links.colors"}}
-          @action={{this.visitColors}}
+          @href="/admin/customize/colors"
         />
         <DButton
           @title={{themePrefix "dev_utils.links.settings"}}
           @icon="wrench"
           @label={{themePrefix "dev_utils.links.settings"}}
-          @action={{this.visitSettings}}
+          @href="/admin/site_settings"
         />
         <DButton
           @title={{themePrefix "dev_utils.links.plugins"}}
           @icon="plug"
           @label={{themePrefix "dev_utils.links.plugins"}}
-          @action={{this.visitPlugins}}
+          @href="/admin/plugins"
         />
         <DButton
           @title={{themePrefix "dev_utils.links.user_prefs"}}
           @icon="user-cog"
           @label={{themePrefix "dev_utils.links.user_prefs"}}
-          @action={{this.visitUserPrefs}}
+          @href="/my/preferences/account"
         />
         <DButton
           @title={{themePrefix "dev_utils.links.text"}}
           @icon="font"
           @label={{themePrefix "dev_utils.links.text"}}
-          @action={{this.visitTextCustomize}}
+          @href="/admin/customize/site_texts?q="
         />
-        <a
-          target="_blank"
+        <DButton
           rel="noopener noreferrer"
-          href="https://github.dev/discourse/discourse/blob/main/app/assets/javascripts/discourse/app/lib/plugin-api.gjs#L1"
-          class="btn btn-icon-text"
-        >
-          {{dIcon "code"}}
-          {{i18n (themePrefix "dev_utils.links.plugin_api")}}
-        </a>
-        <a
           target="_blank"
+          @title={{themePrefix "dev_utils.links.plugin_api"}}
+          @icon="code"
+          @label={{themePrefix "dev_utils.links.plugin_api"}}
+          @href="https://github.dev/discourse/discourse/blob/main/app/assets/javascripts/discourse/app/lib/plugin-api.gjs#L1"
+        />
+        <DButton
           rel="noopener noreferrer"
-          href="https://docs.discourse.org/"
-          class="btn btn-icon-text"
-        >
-          {{dIcon "book-open"}}
-          {{i18n (themePrefix "dev_utils.links.docs")}}
-        </a>
+          target="_blank"
+          @title={{themePrefix "dev_utils.links.docs"}}
+          @icon="book-open"
+          @label={{themePrefix "dev_utils.links.docs"}}
+          @href="https://docs.discourse.org/"
+        />
         {{#each settings.custom_links as |link|}}
-          <a href={{link.link}} class="btn btn-icon-text">{{dIcon link.icon}}
-            {{link.name}}</a>
+          <DButton
+            @translatedTitle={{link.name}}
+            @icon={{link.icon}}
+            @translatedLabel={{link.name}}
+            @href={{link.link}}
+          />
         {{/each}}
 
       </div>
@@ -209,7 +168,7 @@ export default class DevToolboxModal extends Component {
         {{i18n (themePrefix "dev_utils.common_settings.title")}}</h3>
       <div class="modal-button-group">
         <ComboBox
-          @content={{this.commonSettings}}
+          @content={{COMMON_SETTINGS}}
           @value={{this.commonSetting}}
           @onChange={{this.navigateToSetting}}
         />
