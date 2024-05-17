@@ -80,13 +80,11 @@ export default class DevToolboxModal extends Component {
         {{i18n (themePrefix "dev_utils.actions.title")}}</h3>
       <div class="modal-button-group">
         <DButton
-          @title={{themePrefix "dev_utils.actions.toggle_alerts"}}
           @icon="exclamation"
           @label={{themePrefix "dev_utils.actions.toggle_alerts"}}
           @action={{this.toggleAlerts}}
         />
         <DButton
-          @title={{themePrefix "dev_utils.actions.toggle_plugin_outlets"}}
           @icon="plug"
           @label={{themePrefix "dev_utils.actions.toggle_plugin_outlets"}}
           @action={{this.togglePluginOutlets}}
@@ -96,43 +94,36 @@ export default class DevToolboxModal extends Component {
       <h3>{{dIcon "link"}} {{i18n (themePrefix "dev_utils.links.title")}}</h3>
       <div class="modal-button-group">
         <DButton
-          @title={{themePrefix "dev_utils.links.themes"}}
           @icon="paint-brush"
           @label={{themePrefix "dev_utils.links.themes"}}
           @href="/admin/customize/themes"
         />
         <DButton
-          @title={{themePrefix "dev_utils.links.components"}}
           @icon="puzzle-piece"
           @label={{themePrefix "dev_utils.links.components"}}
           @href="/admin/customize/components"
         />
         <DButton
-          @title={{themePrefix "dev_utils.links.colors"}}
           @icon="palette"
           @label={{themePrefix "dev_utils.links.colors"}}
           @href="/admin/customize/colors"
         />
         <DButton
-          @title={{themePrefix "dev_utils.links.settings"}}
           @icon="wrench"
           @label={{themePrefix "dev_utils.links.settings"}}
           @href="/admin/site_settings"
         />
         <DButton
-          @title={{themePrefix "dev_utils.links.plugins"}}
           @icon="plug"
           @label={{themePrefix "dev_utils.links.plugins"}}
           @href="/admin/plugins"
         />
         <DButton
-          @title={{themePrefix "dev_utils.links.user_prefs"}}
           @icon="user-cog"
           @label={{themePrefix "dev_utils.links.user_prefs"}}
           @href="/my/preferences/account"
         />
         <DButton
-          @title={{themePrefix "dev_utils.links.text"}}
           @icon="font"
           @label={{themePrefix "dev_utils.links.text"}}
           @href="/admin/customize/site_texts?q="
@@ -140,7 +131,6 @@ export default class DevToolboxModal extends Component {
         <DButton
           rel="noopener noreferrer"
           target="_blank"
-          @title={{themePrefix "dev_utils.links.plugin_api"}}
           @icon="code"
           @label={{themePrefix "dev_utils.links.plugin_api"}}
           @href="https://github.dev/discourse/discourse/blob/main/app/assets/javascripts/discourse/app/lib/plugin-api.gjs#L1"
@@ -148,14 +138,12 @@ export default class DevToolboxModal extends Component {
         <DButton
           rel="noopener noreferrer"
           target="_blank"
-          @title={{themePrefix "dev_utils.links.docs"}}
           @icon="book-open"
           @label={{themePrefix "dev_utils.links.docs"}}
           @href="https://docs.discourse.org/"
         />
         {{#each settings.custom_links as |link|}}
           <DButton
-            @translatedTitle={{link.name}}
             @icon={{link.icon}}
             @translatedLabel={{link.name}}
             @href={{link.link}}
