@@ -1,6 +1,6 @@
 import { apiInitializer } from "discourse/lib/api";
 import DevToolboxHeaderIcon from "../components/dev-toolbox-header-icon";
-import DevToolboxModal from "../components/modal/dev-toolbox-modal";
+import DevToolboxModal from "../components/modal/dev-toolbox";
 
 export default apiInitializer("1.28.0", (api) => {
   const currentUser = api.getCurrentUser();
@@ -29,13 +29,6 @@ export default apiInitializer("1.28.0", (api) => {
 
   api.addKeyboardShortcut("`", (event) => showDevToolbox(event), {
     global: true,
-    help: {
-      category: "application",
-      name: "Open Dev Toolbox",
-      definition: {
-        keys1: ["`"],
-      },
-    },
   });
 
   api.onPageChange(() => {

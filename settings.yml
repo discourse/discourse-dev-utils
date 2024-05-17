@@ -13,3 +13,15 @@ actions_close_modal:
   default: true
   description:
     en: "Triggering an action in the toolbox will also close the toolbox modal."
+custom_links:
+  type: objects
+  default: []
+  schema:
+    name: link
+    properties:
+      name: 
+        type: string
+      icon: 
+        type: string
+      link: 
+        type: string

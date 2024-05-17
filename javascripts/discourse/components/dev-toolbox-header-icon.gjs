@@ -3,7 +3,7 @@ import { action } from "@ember/object";
 import { service } from "@ember/service";
 import DButton from "discourse/components/d-button";
 import I18n from "I18n";
-import DevToolboxModal from "./modal/dev-toolbox-modal";
+import DevToolboxModal from "./modal/dev-toolbox";
 
 export default class DevToolboxHeaderIcon extends Component {
   @service modal;
@@ -22,7 +22,7 @@ export default class DevToolboxHeaderIcon extends Component {
       @action={{this.showModal}}
       @icon="cog"
       @translatedTitle={{this.title}}
-      class="btn-flat icon"
+      class="btn-flat icon dev-toolbox-trigger"
     />
   </template>
 }

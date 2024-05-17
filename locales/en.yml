@@ -13,6 +13,7 @@ en:
     links:
       title: "Quick Links"
       themes: "Themes"
+      components: "Theme Components"
       colors: "Colors"
       settings: "Settings"
       plugins: "Plugins"
