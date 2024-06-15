@@ -1,8 +1,8 @@
 {
-  "about_url": null,
-  "license_url": null,
+  "about_url": "https://meta.discourse.org/t/developer-toolbox/239148",
+  "license_url": "https://github.com/discourse/discourse-dev-utils/blob/main/LICENSE.txt",
   "assets": {},
-  "name": "Dev Utils",
+  "name": "Developer Toolbox",
   "author": "Keegan George",
   "component": true,
   "components": [
