@@ -76,7 +76,7 @@ export default class DevToolboxModal extends Component {
       @title={{i18n (themePrefix "dev_utils.modal.title")}}
       class="dev-toolbox-modal"
     >
-      <h3>{{dIcon "running"}}
+      <h3>{{dIcon "person-running"}}
         {{i18n (themePrefix "dev_utils.actions.title")}}</h3>
       <div class="modal-button-group">
         <DButton
@@ -152,7 +152,7 @@ export default class DevToolboxModal extends Component {
 
       </div>
 
-      <h3>{{dIcon "tools"}}
+      <h3>{{dIcon "screwdriver-wrench"}}
         {{i18n (themePrefix "dev_utils.common_settings.title")}}</h3>
       <div class="modal-button-group">
         <ComboBox
