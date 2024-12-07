@@ -20,7 +20,7 @@ export default class DevToolboxHeaderIcon extends Component {
   <template>
     <DButton
       @action={{this.showModal}}
-      @icon="cog"
+      @icon="gear"
       @translatedTitle={{this.title}}
       class="btn-flat icon dev-toolbox-trigger"
     />
