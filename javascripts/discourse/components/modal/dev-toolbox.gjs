@@ -94,7 +94,7 @@ export default class DevToolboxModal extends Component {
       <h3>{{dIcon "link"}} {{i18n (themePrefix "dev_utils.links.title")}}</h3>
       <div class="modal-button-group">
         <DButton
-          @icon="paint-brush"
+          @icon="paintbrush"
           @label={{themePrefix "dev_utils.links.themes"}}
           @href="/admin/customize/themes"
         />
@@ -119,7 +119,7 @@ export default class DevToolboxModal extends Component {
           @href="/admin/plugins"
         />
         <DButton
-          @icon="user-cog"
+          @icon="user-gear"
           @label={{themePrefix "dev_utils.links.user_prefs"}}
           @href="/my/preferences/account"
         />
