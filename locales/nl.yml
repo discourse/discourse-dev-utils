@@ -5,3 +5,32 @@
 # https://translate.discourse.org/
 
 nl:
+  theme_metadata:
+    description: "Een toolbox voor ontwikkelaars om snel te kunnen schakelen tussen veelvoorkomende acties tijdens het ontwikkelen"
+    settings:
+      show_header_button: "Trigger voor ontwikkelaarstoolbox weergeven in kopregel"
+      remove_button_from_flow: "Zet de kopregelknop rechtsonder vast. (Vereist dat show_header_button is ingeschakeld)"
+      actions_close_modal: "Door een actie in de toolbox te activeren, wordt ook het modale toolboxvenster gesloten."
+  dev_utils:
+    toggle_btn: "Ontwikkelaarstoolbox"
+    modal:
+      title: "Ontwikkelaarstoolbox"
+      cancel: "Annuleren"
+    actions:
+      title: "Snelle acties"
+      toggle_alerts: "Meldingen schakelen"
+      toggle_plugin_outlets: "Uitgangen schakelen"
+    links:
+      title: "Snelle links"
+      themes: "Thema's"
+      components: "Themaonderdelen"
+      colors: "Kleuren"
+      settings: "Instellingen"
+      plugins: "Plug-ins"
+      user_prefs: "Gebruikersvoorkeuren"
+      text: "Tekst"
+      plugin_api: "Plugin-API"
+      docs: "Discourse-documentatie"
+    common_settings:
+      title: "Algemene instellingen"
+      none: "Selecteer een instelling"

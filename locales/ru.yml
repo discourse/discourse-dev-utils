@@ -5,3 +5,32 @@
 # https://translate.discourse.org/
 
 ru:
+  theme_metadata:
+    description: "Набор инструментов для разработчиков, позволяющий быстро переключаться между типовыми действиями в процессе разработки"
+    settings:
+      show_header_button: "Показывать триггер для набора инструментов разработчика на панели заголовка"
+      remove_button_from_flow: "Фиксирует кнопку заголовка в правом нижнем углу. (Требуется включить show_header_button.)"
+      actions_close_modal: "Запуск действия на панели инструментов также закроет модальное окно панели инструментов."
+  dev_utils:
+    toggle_btn: "Набор инструментов для разработчиков"
+    modal:
+      title: "Набор инструментов для разработчиков"
+      cancel: "Отменить"
+    actions:
+      title: "Быстрые действия"
+      toggle_alerts: "Переключить оповещения"
+      toggle_plugin_outlets: "Переключить точки подключения"
+    links:
+      title: "Быстрые ссылки"
+      themes: "Темы"
+      components: "Компоненты темы"
+      colors: "Цвета"
+      settings: "Настройки"
+      plugins: "Плагины"
+      user_prefs: "Параметры пользователя"
+      text: "Текст"
+      plugin_api: "API плагина"
+      docs: "Документация по Discourse"
+    common_settings:
+      title: "Общие настройки"
+      none: "Выберите настройку"
