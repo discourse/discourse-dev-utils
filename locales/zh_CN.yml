@@ -5,3 +5,32 @@
 # https://translate.discourse.org/
 
 zh_CN:
+  theme_metadata:
+    description: "可供开发者在开发过程中快速切换常用操作的工具箱"
+    settings:
+      show_header_button: "在标题面板中显示开发者工具箱触发器"
+      remove_button_from_flow: "将标题按钮固定到右下角。（需要启用 show_header_button）"
+      actions_close_modal: "触发工具箱中的操作也会关闭工具箱模态。"
+  dev_utils:
+    toggle_btn: "开发者工具箱"
+    modal:
+      title: "开发者工具箱"
+      cancel: "取消"
+    actions:
+      title: "快捷操作"
+      toggle_alerts: "切换提醒"
+      toggle_plugin_outlets: "切换出口"
+    links:
+      title: "快速链接"
+      themes: "主题"
+      components: "主题组件"
+      colors: "颜色"
+      settings: "设置"
+      plugins: "插件"
+      user_prefs: "用户偏好设置"
+      text: "文本"
+      plugin_api: "插件 API"
+      docs: "Discourse 文档"
+    common_settings:
+      title: "常用设置"
+      none: "选择设置"

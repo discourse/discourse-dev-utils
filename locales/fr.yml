@@ -5,3 +5,32 @@
 # https://translate.discourse.org/
 
 fr:
+  theme_metadata:
+    description: "Une boîte à outils permettant aux développeurs d'activer rapidement des actions courantes lors du développement"
+    settings:
+      show_header_button: "Afficher le déclencheur de la boîte à outils de développement dans le panneau d'en-tête"
+      remove_button_from_flow: "Corrige le bouton d'en-tête en bas à droite. (Nécessite l'activation de show_header_button)"
+      actions_close_modal: "Le déclenchement d'une action dans la boîte à outils fermera également la fenêtre modale de la boîte à outils."
+  dev_utils:
+    toggle_btn: "Boîte à outils de développement"
+    modal:
+      title: "Boîte à outils des développeurs"
+      cancel: "Annuler"
+    actions:
+      title: "Actions rapides"
+      toggle_alerts: "Activer/désactiver les alertes"
+      toggle_plugin_outlets: "Activer/désactiver les sorties"
+    links:
+      title: "Liens rapides"
+      themes: "Thèmes"
+      components: "Composants du thème"
+      colors: "Couleurs"
+      settings: "Paramètres"
+      plugins: "Extensions"
+      user_prefs: "Préférences de l'utilisateur"
+      text: "Texte"
+      plugin_api: "API d'extension"
+      docs: "Documentation de Discourse"
+    common_settings:
+      title: "Paramètres communs"
+      none: "Sélectionnez un paramètre"

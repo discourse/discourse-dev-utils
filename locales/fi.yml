@@ -5,3 +5,32 @@
 # https://translate.discourse.org/
 
 fi:
+  theme_metadata:
+    description: "Kehittäjien työkalupakki, joilla voi vaihtaa nopeasti yleisiä toimintoja kehityksen aikana"
+    settings:
+      show_header_button: "Näytä kehittäjän työkalupakin triggeri yläpalkkipaneelissa"
+      remove_button_from_flow: "Kiinnittää yläpalkkipainikkeen oikeaan alakulmaan. (Edellyttää, että show_header_button on käytössä)"
+      actions_close_modal: "Toiminnon käynnistäminen työkalupakissa sulkee myös työkalupakin modaalin."
+  dev_utils:
+    toggle_btn: "Kehittäjien työkalupakki"
+    modal:
+      title: "Kehittäjien työkalupakki"
+      cancel: "Peruuta"
+    actions:
+      title: "Pikatoiminnot"
+      toggle_alerts: "Vaihda hälytykset"
+      toggle_plugin_outlets: "Vaihda paikkoja"
+    links:
+      title: "Pikalinkit"
+      themes: "Teemat"
+      components: "Teeman komponentit"
+      colors: "Värit"
+      settings: "Asetukset"
+      plugins: "Lisäosat"
+      user_prefs: "Käyttäjäasetukset"
+      text: "Teksti"
+      plugin_api: "Lisäosa-API"
+      docs: "Discoursen ohjeet"
+    common_settings:
+      title: "Yleiset asetukset"
+      none: "Valitse asetus"

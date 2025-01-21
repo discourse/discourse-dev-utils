@@ -5,3 +5,32 @@
 # https://translate.discourse.org/
 
 ja:
+  theme_metadata:
+    description: "開発者が開発中に良く使用される操作を素早く切り替えるためのツールボックス"
+    settings:
+      show_header_button: "ヘッダーパネルに開発者ツールボックスのトリガーを表示する"
+      remove_button_from_flow: "ヘッダーボタンを右下に固定する（show_header_button が有効になっている必要があります）"
+      actions_close_modal: "ツールボックスで操作をトリガーすると、ツールボックスモーダルも閉じます。"
+  dev_utils:
+    toggle_btn: "開発者ツールボックス"
+    modal:
+      title: "開発者ツールボックス"
+      cancel: "キャンセル"
+    actions:
+      title: "簡易操作"
+      toggle_alerts: "アラートを切り替える"
+      toggle_plugin_outlets: "アウトレットを切り替える"
+    links:
+      title: "簡易リンク"
+      themes: "テーマ"
+      components: "テーマのコンポーネント"
+      colors: "色"
+      settings: "設定"
+      plugins: "プラグイン"
+      user_prefs: "ユーザー設定"
+      text: "テキスト"
+      plugin_api: "プラグイン API"
+      docs: "Discrouse ドキュメント"
+    common_settings:
+      title: "一般設定"
+      none: "設定を選択"
