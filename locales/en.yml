@@ -3,7 +3,7 @@ en:
     description: "A toolbox for developers to quickly toggle common actions while developing"
     settings:
       show_header_button: "Show the trigger for the dev toolbox in the header panel"
-      remove_button_from_flow: "Fixes the header button to bottom right. (Requires show_header_button to be enabled)"
+      remove_button_from_flow: "Fixes the header button to bottom. (Requires show_header_button to be enabled)"
       actions_close_modal: "Triggering an action in the toolbox will also close the toolbox modal."
   dev_utils:
     toggle_btn: "Dev Toolbox"
