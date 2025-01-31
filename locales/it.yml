@@ -9,7 +9,6 @@ it:
     description: "Un set di strumenti per gli sviluppatori per attivare rapidamente le azioni comuni durante lo sviluppo"
     settings:
       show_header_button: "Mostra l'attivazione/disattivazione della casella degli strumenti di sviluppo nel pannello dell'intestazione"
-      remove_button_from_flow: "Corregge il pulsante dell'intestazione in basso a destra. (Richiede che show_header_button sia abilitato)"
       actions_close_modal: "L'attivazione di un'azione nella casella degli strumenti comporta anche la chiusura della finestra modale della casella degli strumenti."
   dev_utils:
     toggle_btn: "Strumenti per sviluppatori"

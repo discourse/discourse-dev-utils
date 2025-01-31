@@ -9,7 +9,6 @@ fr:
     description: "Une boîte à outils permettant aux développeurs d'activer rapidement des actions courantes lors du développement"
     settings:
       show_header_button: "Afficher le déclencheur de la boîte à outils de développement dans le panneau d'en-tête"
-      remove_button_from_flow: "Corrige le bouton d'en-tête en bas à droite. (Nécessite l'activation de show_header_button)"
       actions_close_modal: "Le déclenchement d'une action dans la boîte à outils fermera également la fenêtre modale de la boîte à outils."
   dev_utils:
     toggle_btn: "Boîte à outils de développement"

@@ -9,7 +9,6 @@ tr_TR:
     description: "Geliştiricilerin geliştirme sırasında genel eylemleri hızla değiştirmelerine olanak tanıyan bir araç kutusu"
     settings:
       show_header_button: "Üstbilgi panelinde geliştirici araç kutusu için tetikleyiciyi gösterin"
-      remove_button_from_flow: "Başlık düğmesini sağ alta sabitler. (show_header_button'ın etkinleştirilmesini gerektirir)"
       actions_close_modal: "Araç kutusunda bir eylemi tetiklemek araç kutusu modalını da kapatır."
   dev_utils:
     toggle_btn: "Geliştirici Araç Kutusu"

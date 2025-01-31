@@ -5,3 +5,31 @@
 # https://translate.discourse.org/
 
 ar:
+  theme_metadata:
+    description: "مجموعة أدوات للمُطوِّرين للتبديل بسرعة بين الإجراءات الشائعة أثناء التطوير"
+    settings:
+      show_header_button: "إظهار مُشغِّل مجموعة أدوات المُطوِّر في لوحة الرأس"
+      actions_close_modal: "سيؤدي تشغيل إجراء في مجموعة الأدوات إلى إغلاق النافذة المنبثقة لمجموعة الأدوات أيضًا."
+  dev_utils:
+    toggle_btn: "مجموعة أدوات المُطوِّر"
+    modal:
+      title: "مجموعة أدوات المُطوِّرين"
+      cancel: "إلغاء"
+    actions:
+      title: "الإجراءات السريعة"
+      toggle_alerts: "تبديل التنبيهات"
+      toggle_plugin_outlets: "تبديل المنافذ"
+    links:
+      title: "الروابط السريعة"
+      themes: "السمات"
+      components: "مكوِّنات السمة"
+      colors: "الألوان"
+      settings: "الإعدادات"
+      plugins: "المكوِّنات الإضافية"
+      user_prefs: "تفضيلات المستخدم"
+      text: "النص"
+      plugin_api: "API للمكوِّن الإضافي"
+      docs: "وثائق Discourse"
+    common_settings:
+      title: "الإعدادات العامة"
+      none: "تحديد إعداد"
