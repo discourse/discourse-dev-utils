@@ -9,7 +9,6 @@ pt_BR:
     description: "Caixa de ferramentas para os(as) desenvolvedores(as) alternarem as ações rapidamente durante o desenvolvimento"
     settings:
       show_header_button: "Mostrar o gatilho para a caixa de ferramentas de desenvolvedor(a) no painel do cabeçalho"
-      remove_button_from_flow: "Fixa o botão do cabeçalho na parte inferior à direita. (Requer ativação de show_header_button)"
       actions_close_modal: "Ao acionar uma ação na caixa de ferramentas, o modal da caixa de ferramentas será fechado."
   dev_utils:
     toggle_btn: "Ferramentas de desenv."

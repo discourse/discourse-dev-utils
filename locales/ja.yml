@@ -9,7 +9,6 @@ ja:
     description: "開発者が開発中に良く使用される操作を素早く切り替えるためのツールボックス"
     settings:
       show_header_button: "ヘッダーパネルに開発者ツールボックスのトリガーを表示する"
-      remove_button_from_flow: "ヘッダーボタンを右下に固定する（show_header_button が有効になっている必要があります）"
       actions_close_modal: "ツールボックスで操作をトリガーすると、ツールボックスモーダルも閉じます。"
   dev_utils:
     toggle_btn: "開発者ツールボックス"

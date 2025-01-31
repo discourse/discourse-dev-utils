@@ -9,7 +9,6 @@ de:
     description: "Eine Toolbox für Entwickler, mit der sie während der Entwicklung schnell auf gängige Aktionen zugreifen können"
     settings:
       show_header_button: "Auslöser für die Dev-Toolbox im Kopfzeilenbereich anzeigen"
-      remove_button_from_flow: "Kopfzeilenschaltfläche unten rechts fixieren. (Erfordert, dass show_header_button aktiviert ist.)"
       actions_close_modal: "Wenn du eine Aktion in der Toolbox auslöst, wird auch das Toolbox-Modal geschlossen."
   dev_utils:
     toggle_btn: "Dev-Toolbox"

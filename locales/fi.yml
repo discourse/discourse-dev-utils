@@ -9,7 +9,6 @@ fi:
     description: "Kehittäjien työkalupakki, joilla voi vaihtaa nopeasti yleisiä toimintoja kehityksen aikana"
     settings:
       show_header_button: "Näytä kehittäjän työkalupakin triggeri yläpalkkipaneelissa"
-      remove_button_from_flow: "Kiinnittää yläpalkkipainikkeen oikeaan alakulmaan. (Edellyttää, että show_header_button on käytössä)"
       actions_close_modal: "Toiminnon käynnistäminen työkalupakissa sulkee myös työkalupakin modaalin."
   dev_utils:
     toggle_btn: "Kehittäjien työkalupakki"
