@@ -24,7 +24,8 @@ en:
       user_prefs: "User Preferences"
       text: "Text"
       plugin_api: "Plugin API"
-      docs: "Discourse Docs"
+      docs: "API Docs"
+      meta: "How-to Docs"
     common_settings:
       title: "Common Settings"
       none: "Select a setting"

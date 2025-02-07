@@ -142,6 +142,13 @@ export default class DevToolboxModal extends Component {
           @label={{themePrefix "dev_utils.links.docs"}}
           @href="https://docs.discourse.org/"
         />
+        <DButton
+          rel="noopener noreferrer"
+          target="_blank"
+          @icon="magnifying-glass"
+          @label={{themePrefix "dev_utils.links.meta"}}
+          @href="https://meta.discourse.org/c/documentation/10"
+        />
         {{#each settings.custom_links as |link|}}
           <DButton
             @icon={{link.icon}}
