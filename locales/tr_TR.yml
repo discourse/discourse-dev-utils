@@ -29,7 +29,6 @@ tr_TR:
       user_prefs: "Kullanıcı Tercihleri"
       text: "Metin"
       plugin_api: "Eklenti API'si"
-      docs: "Discourse Belgeleri"
     common_settings:
       title: "Ortak Ayarlar"
       none: "Ayar seçin"

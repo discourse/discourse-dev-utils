@@ -29,7 +29,6 @@ de:
       user_prefs: "Benutzereinstellungen"
       text: "Text"
       plugin_api: "Plug-in-API"
-      docs: "Discourse-Dokumentation"
     common_settings:
       title: "Allgemeine Einstellungen"
       none: "Einstellung auswählen"

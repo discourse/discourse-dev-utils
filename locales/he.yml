@@ -7,6 +7,10 @@
 he:
   theme_metadata:
     description: "ארגז כלים למפתחים כדי לעבור בין פעולות נפוצות בזמן פיתוח"
+    settings:
+      show_header_button: "להציג את ההזנקה לארגז כלי הפיתוח בלוח הכותרת"
+      remove_button_from_flow: "מקבע את כפתור הכותרת לקרקעית. (דורש את הפעלת האפשרות show_header_button/הצגת כפתור כותרת)"
+      actions_close_modal: "הזנקת פעולה בארגז הכלים יסגור את החלון החוסם של ארגז הכלים."
   dev_utils:
     toggle_btn: "ארגז כלי פיתוח"
     modal:
@@ -15,6 +19,7 @@ he:
     actions:
       title: "פעולות מהירות"
       toggle_alerts: "החלפת מצב התראות"
+      toggle_plugin_outlets: "החלפת מצבי שקעים"
     links:
       title: "קישורים מהירים"
       themes: "ערכות עיצוב"
@@ -25,7 +30,8 @@ he:
       user_prefs: "העדפות משתמשים"
       text: "טקסט"
       plugin_api: "API לתוספים"
-      docs: "מסמכי Discourse"
+      docs: "תיעוד API"
+      meta: "מסמכי הדרכה"
     common_settings:
       title: "הגדרות משותפות"
       none: "נא לבחור הגדרה"

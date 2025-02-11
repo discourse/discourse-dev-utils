@@ -29,7 +29,6 @@ fr:
       user_prefs: "Préférences de l'utilisateur"
       text: "Texte"
       plugin_api: "API d'extension"
-      docs: "Documentation de Discourse"
     common_settings:
       title: "Paramètres communs"
       none: "Sélectionnez un paramètre"
