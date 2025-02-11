@@ -29,7 +29,6 @@ ru:
       user_prefs: "Параметры пользователя"
       text: "Текст"
       plugin_api: "API плагина"
-      docs: "Документация по Discourse"
     common_settings:
       title: "Общие настройки"
       none: "Выберите настройку"

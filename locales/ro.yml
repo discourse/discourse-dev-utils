@@ -8,3 +8,7 @@ ro:
   theme_metadata:
     settings:
       remove_button_from_flow: "Fixează butonul de antet în jos. (Necesită ca show_header_button să fie activat)"
+  dev_utils:
+    links:
+      docs: "Documentație API"
+      meta: "Documentație de utilizare"

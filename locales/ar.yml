@@ -29,7 +29,6 @@ ar:
       user_prefs: "تفضيلات المستخدم"
       text: "النص"
       plugin_api: "API للمكوِّن الإضافي"
-      docs: "وثائق Discourse"
     common_settings:
       title: "الإعدادات العامة"
       none: "تحديد إعداد"

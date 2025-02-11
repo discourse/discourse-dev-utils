@@ -29,7 +29,6 @@ fi:
       user_prefs: "Käyttäjäasetukset"
       text: "Teksti"
       plugin_api: "Lisäosa-API"
-      docs: "Discoursen ohjeet"
     common_settings:
       title: "Yleiset asetukset"
       none: "Valitse asetus"

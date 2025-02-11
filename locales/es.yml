@@ -29,7 +29,6 @@ es:
       user_prefs: "Preferencias de usuario"
       text: "Texto"
       plugin_api: "API del plugin"
-      docs: "Documentos de Discourse"
     common_settings:
       title: "Ajustes comunes"
       none: "Selecciona un ajuste"

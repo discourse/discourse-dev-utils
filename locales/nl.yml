@@ -29,7 +29,6 @@ nl:
       user_prefs: "Gebruikersvoorkeuren"
       text: "Tekst"
       plugin_api: "Plugin-API"
-      docs: "Discourse-documentatie"
     common_settings:
       title: "Algemene instellingen"
       none: "Selecteer een instelling"

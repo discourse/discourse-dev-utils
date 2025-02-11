@@ -29,7 +29,6 @@ ja:
       user_prefs: "ユーザー設定"
       text: "テキスト"
       plugin_api: "プラグイン API"
-      docs: "Discrouse ドキュメント"
     common_settings:
       title: "一般設定"
       none: "設定を選択"
