@@ -9,6 +9,7 @@ es:
     description: "Una caja de herramientas para que los desarrolladores puedan alternar rápidamente acciones comunes mientras desarrollan"
     settings:
       show_header_button: "Mostrar el activador de la caja de herramientas de desarrollo en el panel de encabezado"
+      remove_button_from_flow: "Fija el botón de encabezado en la parte inferior. (Requiere que show_header_button esté activado)"
       actions_close_modal: "Al activar una acción en la caja de herramientas también se cerrará la ventana modal de la caja de herramientas."
   dev_utils:
     toggle_btn: "Caja de herramientas para desarrolladores"
@@ -29,6 +30,8 @@ es:
       user_prefs: "Preferencias de usuario"
       text: "Texto"
       plugin_api: "API del plugin"
+      docs: "Docmentos API"
+      meta: "Documentos instructivos"
     common_settings:
       title: "Ajustes comunes"
       none: "Selecciona un ajuste"
