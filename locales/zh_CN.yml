@@ -9,7 +9,7 @@ zh_CN:
     description: "可供开发者在开发过程中快速切换常用操作的工具箱"
     settings:
       show_header_button: "在标题面板中显示开发者工具箱触发器"
-      remove_button_from_flow: "使触发工具箱的按钮固定在页面右下角。（需要启用 `show_header_button`）"
+      remove_button_from_flow: "将标题按钮固定到底部。（需要启用 `show_header_button`）"
       actions_close_modal: "触发工具箱中的操作也会关闭工具箱模态。"
   dev_utils:
     toggle_btn: "开发者工具箱"
@@ -30,6 +30,8 @@ zh_CN:
       user_prefs: "用户偏好设置"
       text: "文本"
       plugin_api: "插件 API"
+      docs: "API 文档"
+      meta: "操作方法文档"
     common_settings:
       title: "常用设置"
       none: "选择设置"
