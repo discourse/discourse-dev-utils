@@ -9,6 +9,7 @@ ja:
     description: "開発者が開発中に良く使用される操作を素早く切り替えるためのツールボックス"
     settings:
       show_header_button: "ヘッダーパネルに開発者ツールボックスのトリガーを表示する"
+      remove_button_from_flow: "ヘッダーボタンを下に固定します。(show_header_button が有効になっている必要があります)"
       actions_close_modal: "ツールボックスで操作をトリガーすると、ツールボックスモーダルも閉じます。"
   dev_utils:
     toggle_btn: "開発者ツールボックス"
@@ -29,6 +30,8 @@ ja:
       user_prefs: "ユーザー設定"
       text: "テキスト"
       plugin_api: "プラグイン API"
+      docs: "API ドキュメント"
+      meta: "操作方法ドキュメント"
     common_settings:
       title: "一般設定"
       none: "設定を選択"
