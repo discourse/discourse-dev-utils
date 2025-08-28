@@ -9,6 +9,7 @@ nl:
     description: "Een toolbox voor ontwikkelaars om snel te kunnen schakelen tussen veelvoorkomende acties tijdens het ontwikkelen"
     settings:
       show_header_button: "Trigger voor ontwikkelaarstoolbox weergeven in kopregel"
+      remove_button_from_flow: "Zet de kopregelknop onderaan vast. (Vereist dat show_header_button is ingeschakeld)"
       actions_close_modal: "Door een actie in de toolbox te activeren, wordt ook het modale toolboxvenster gesloten."
   dev_utils:
     toggle_btn: "Ontwikkelaarstoolbox"
@@ -29,6 +30,8 @@ nl:
       user_prefs: "Gebruikersvoorkeuren"
       text: "Tekst"
       plugin_api: "Plugin-API"
+      docs: "API-documentatie"
+      meta: "Instructiedocumenten"
     common_settings:
       title: "Algemene instellingen"
       none: "Selecteer een instelling"
