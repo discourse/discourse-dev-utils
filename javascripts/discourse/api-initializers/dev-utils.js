@@ -2,7 +2,7 @@ import { apiInitializer } from "discourse/lib/api";
 import DevToolboxHeaderIcon from "../components/dev-toolbox-header-icon";
 import DevToolboxModal from "../components/modal/dev-toolbox";
 
-export default apiInitializer("1.28.0", (api) => {
+export default apiInitializer((api) => {
   const currentUser = api.getCurrentUser();
 
   if (!currentUser?.admin) {
