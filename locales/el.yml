@@ -5,3 +5,25 @@
 # https://translate.discourse.org/
 
 el:
+  dev_utils:
+    modal:
+      cancel: "Ακύρωση"
+    actions:
+      title: "Γρήγορες ενέργειες"
+      toggle_alerts: "Εναλλαγή ειδοποιήσεων"
+      toggle_plugin_outlets: "Εναλλαγή εξόδων"
+    links:
+      title: "Γρήγοροι σύνδεσμοι"
+      themes: "Θέματα"
+      components: "Στοιχεία θέματος"
+      colors: "Χρώματα"
+      settings: "Ρυθμίσεις"
+      plugins: "Πρόσθετα"
+      user_prefs: "Προτιμήσεις χρήστη"
+      text: "Κείμενο"
+      plugin_api: "API πρόσθετου"
+      docs: "Έγγραφα API"
+      meta: "Έγγραφα How-to"
+    common_settings:
+      title: "Κοινές ρυθμίσεις"
+      none: "Επιλέξτε μια ρύθμιση"
