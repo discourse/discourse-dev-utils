@@ -5,8 +5,8 @@ import DButton from "discourse/components/d-button";
 import DModal from "discourse/components/d-modal";
 import dIcon from "discourse/helpers/d-icon";
 import DiscourseURL from "discourse/lib/url";
+import ComboBox from "discourse/select-kit/components/combo-box";
 import { i18n } from "discourse-i18n";
-import ComboBox from "select-kit/components/combo-box";
 
 const COMMON_SETTINGS = [
   { id: "branding", name: "branding", path: "branding" },
